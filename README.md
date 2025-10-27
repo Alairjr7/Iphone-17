@@ -1,77 +1,81 @@
-<<<<<<< HEAD
-# Iphone-17
-=======
-# React + TypeScript + Vite
+project:
+  name: "iPhone 17 Landing Page"
+  description: >
+    Este projeto é uma Landing Page moderna do iPhone 17, desenvolvida com React + TypeScript + Vite
+    e estilizada com Tailwind CSS. O design base foi inspirado em uma videoaula do canal DevClub,
+    e foram adicionadas novas páginas e melhorias, incluindo:
+  highlights:
+    - "Página NotFound personalizada"
+    - "Página de Detalhes com transições e estrutura própria"
+    - "Ajustes no design, rotas e componentes"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+technologies:
+  - React
+  - TypeScript
+  - Tailwind CSS
+  - React Router DOM
+  - Vite
 
-Currently, two official plugins are available:
+structure:
+  src:
+    components:
+      - colors
+      - footer
+      - header
+      - hero
+      - highlights
+      - intro
+      - layout
+    pages:
+      - home
+      - details
+      - notfound
+    files:
+      - App.tsx
+      - router.tsx
+      - main.tsx
+      - index.css
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+features:
+  - "Layout totalmente responsivo"
+  - "Animações suaves e interativas"
+  - "Sistema de rotas (Home, Detalhes e NotFound)"
+  - "Componentização e organização de pastas"
+  - "Efeitos de transição e hover com Tailwind"
 
-## React Compiler
+getting_started:
+  steps:
+    - step: "Clone o repositório"
+      command: "git clone https://github.com/Alairjr7/iphone-17.git"
+    - step: "Acesse a pasta do projeto"
+      command: "cd iphone-17"
+    - step: "Instale as dependências"
+      command: "npm install"
+    - step: "Inicie o servidor de desenvolvimento"
+      command: "npm run dev"
+    - step: "Acesse no navegador"
+      url: "http://localhost:5173"
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+credits:
+  description: >
+    Este projeto foi desenvolvido com base em uma videoaula do canal DevClub,
+    servindo como base para aprendizado e aprimoramento. As páginas NotFound e Details,
+    além de outras melhorias, foram implementadas por Alair Jr como parte da jornada de evolução
+    do canal DevNaRede.
 
-## Expanding the ESLint configuration
+demo:
+  description: "Adicione aqui prints ou o link do projeto publicado"
+  link: null
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+author:
+  name: "Alair Jr"
+  role: "Desenvolvedor Front-End em evolução"
+  github: "https://github.com/Alairjr7"
+  linkedin: "https://www.linkedin.com/in/alaairjrr"
+  channel: "DevNaRede"
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
->>>>>>> 6bd78d5 (iPhone 17 Landing Page)
+learnings:
+  - "Organização de componentes e rotas no React"
+  - "Boas práticas com TypeScript e Vite"
+  - "Uso avançado do Tailwind para responsividade e efeitos visuais"
+  - "Criação de páginas adicionais e personalização de layouts"
