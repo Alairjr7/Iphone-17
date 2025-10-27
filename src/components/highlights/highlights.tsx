@@ -1,5 +1,7 @@
 import type { SpecProps } from "../intro/intro";
-
+import titanium from "../../../public/assets/titanium-design.jpg";
+import feature from "../../../public/assets/ios-features.jpg";
+import chipA18 from "../../../public/assets/chip-a18-pro.jpg";
 export default function Highlights() {
   const spec: SpecProps[] = [
     {
@@ -37,7 +39,7 @@ export default function Highlights() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-16 ">
           <div className="bg-gray-900 rounded-3xl sm:p-8 p-4">
             <img
-              src="../../../public/assets/titanium-design.jpg"
+              src={titanium}
               alt="iphone-titanium"
               className="w-full rounded-2xl mb-4"
             />
@@ -51,7 +53,7 @@ export default function Highlights() {
           </div>
           <div className="bg-gray-900 rounded-3xl p-8">
             <img
-              src="../../../public/assets/ios-features.jpg"
+              src={feature}
               alt="ios 2025"
               className="w-full rounded-2xl mb-4"
             />
@@ -72,11 +74,7 @@ export default function Highlights() {
           <p className="text-gray-300 mb-6 text-sm sm:text-base">
             O chip mais poderoso em um smartphone.
           </p>
-          <img
-            src="../../../public/assets/chip-a18-pro.jpg"
-            alt="chip a18"
-            className="w-full rounded-2xl mb-4"
-          />
+          <img src={chipA18} alt="chip a18" className="w-full rounded-2xl mb-4" />
           <ul className="list-disc list-inside space-y-3 text-gray-300 text-sm sm:text-base">
             <li>CPU 20% mais rápida</li>
             <li>GPU 25% mais eficiente</li>

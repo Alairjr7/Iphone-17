@@ -1,11 +1,11 @@
 import { ChevronDown } from "lucide-react";
-
+import heroImg from "../../../public/assets/hero.jpg"
 export default function Hero() {
   return (
     <section className="relative h-screen overflow-hidden bg-black hidden sm:block">
       <div className="absolute top-18 bottom-0 left-0 right-0 z-0">
         <img
-          src="../../../public/assets/hero.jpg"
+          src={heroImg}
           alt="Imagem Hero"
           className="w-full h-full object-cover backdrop-opacity-90"
         />

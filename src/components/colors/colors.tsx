@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import iphoneBlue from "../../../public/assets/iphone-blue.jpg";
+import iphoneSilver from "../../../public/assets/iphone-silver.jpg";
+import iphoneOrange from "../../../public/assets/iphone-orange.jpg";
+
 interface colorsProps {
   id: string;
   name: string;
@@ -23,19 +27,19 @@ export default function Colors() {
     {
       id: "blue",
       name: "Titânio Azul",
-      image: "../../../public/assets/iphone-blue.jpg",
+      image: iphoneBlue,
       colorClass: "bg-blue-500",
     },
     {
       id: "silver",
       name: "Titânio Natural",
-      image: "../../../public/assets/iphone-silver.jpg",
+      image: iphoneSilver,
       colorClass: "bg-gray-300",
     },
     {
       id: "orange",
       name: "Titânio Laranja",
-      image: "../../../public/assets/iphone-orange.jpg",
+      image: iphoneOrange,
       colorClass: "bg-orange-500",
     },
   ];

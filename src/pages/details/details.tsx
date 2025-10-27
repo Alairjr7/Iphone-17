@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import iphoneBlue from "../../../public/assets/iphone-blue.jpg";
+import iphoneSilver from "../../../public/assets/iphone-silver.jpg";
+import iphoneOrange from "../../../public/assets/iphone-orange.jpg";
 
 interface SpecProps {
   id: string;
@@ -11,17 +14,17 @@ export default function Details() {
   const spec: SpecProps[] = [
     {
       id: "blue",
-      image: "../../../public/assets/iphone-blue.jpg",
+      image: iphoneBlue,
       color: "bg-blue-500",
     },
     {
       id: "silver",
-      image: "../../../public/assets/iphone-silver.jpg",
+      image: iphoneSilver,
       color: "bg-gray-300",
     },
     {
       id: "orange",
-      image: "../../../public/assets/iphone-orange.jpg",
+      image: iphoneOrange,
       color: "bg-orange-500",
     },
   ];

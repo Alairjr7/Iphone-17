@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import feature from "../../../public/assets/ios-features.jpg";
 
 export default function Notfound() {
   return (
@@ -24,7 +25,7 @@ export default function Notfound() {
 
         <div className="mt-16">
           <img
-            src="/assets/ios-features.jpg"
+            src={feature}
             alt="Not Found"
             className="rounded-3xl w-full max-w-md mx-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
           />
